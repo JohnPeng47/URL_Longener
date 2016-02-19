@@ -7,6 +7,6 @@ The URL longener is availible at this AWS address: http://ec2-52-36-178-239.us-w
 
 Getting Started:
 
-1) Type in the URL you want to elongate
-2) Type in a key (this will become apart of your new url)
+1) Type in the URL you want to elongate <br />
+2) Type in a key (this will become apart of your new url) <br />
 3) Click the "Submit" button and voila, you got youself an unessecarily long URL courtesy of AWS 
