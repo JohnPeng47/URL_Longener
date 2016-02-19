@@ -1,0 +1,28 @@
+@(helloForm: Form[(String,String)])
+
+@import helper._
+
+@main(title = "URL Shortener(Longener)") {
+
+    <h1>ENTER YOUR URL</h1>
+
+    @form(action = routes.Application.sayHello, args = 'id -> "helloform") {
+
+        @inputText(
+            field = helloForm("url"),
+            args = '_label -> "Please Enter URL you wish to shorten (must include 'http://' heading)", 'size-> 30, 'placeholder -> "http://www.google.com"
+        )
+
+        @inputText(
+            field = helloForm("key"),
+            args = '_label -> "Please enter a key which will be part of your new URL(Optional)", 'size -> 30, 'placeholder -> 10
+        )
+
+
+        <p class="buttons">
+            <input type="submit" id="submit">
+        <p>
+
+    }
+
+}
